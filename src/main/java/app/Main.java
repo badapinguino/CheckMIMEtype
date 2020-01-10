@@ -13,7 +13,7 @@ public class Main{
         File myObj6 = new File("src/files/sample.xlsx");
         File myObj8 = new File("src/files/Sample_data.epub");
         File myObj7 = new File("src/files/zip_2MB.zip");
-        File myObj9 = new File("src/files/1576247384200_178.pdf.p7m");
+//        File myObj9 = new File("src/files/1576247384200_178.pdf.p7m");
         if (myObj.exists()) {
             try {
                 System.out.println("JPG " + CheckFileExtensionMime.getInstance().checkFile(myObj) );
@@ -31,8 +31,8 @@ public class Main{
                 System.out.println("XLSX 8: " + CheckFileExtensionMime.getInstance().checkFile(myObj8) );
                 System.out.println();
                 System.out.println("ZIP " + CheckFileExtensionMime.getInstance().checkFile(myObj7) );
-                System.out.println();
-                System.out.println("PDF.P7M " + CheckFileExtensionMime.getInstance().checkFile(myObj9) );
+//                System.out.println();
+//                System.out.println("PDF.P7M " + CheckFileExtensionMime.getInstance().checkFile(myObj9) );
             } catch (IOException e) {
                 e.printStackTrace();
             }
