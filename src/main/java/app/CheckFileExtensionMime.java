@@ -47,7 +47,7 @@ public class CheckFileExtensionMime {
         if(hex.substring(0,10).equalsIgnoreCase("255044462d") && extension.equalsIgnoreCase("pdf")){
             check = true;
             return check;
-        }else if((hex.substring(0,8).equalsIgnoreCase("30832d25"))
+        }else if((hex.substring(0,4).equalsIgnoreCase("3083"))
                 && (extension.equalsIgnoreCase("p7m") || extension.equalsIgnoreCase("pdf.p7m"))){
             check = true;
             return check;
