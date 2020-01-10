@@ -40,8 +40,4 @@ public class Main{
             System.out.println("The file does not exist.");
         }
     }
-
-
-
-
 }
