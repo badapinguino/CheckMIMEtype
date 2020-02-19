@@ -13,7 +13,11 @@ public class Main{
         File myObj6 = new File("src/files/sample.xlsx");
         File myObj8 = new File("src/files/Sample_data.epub");
         File myObj7 = new File("src/files/zip_2MB.zip");
-//        File myObj9 = new File("src/files/1576247384200_178.pdf.p7m");
+        File myObj9 = new File("src/files/1576247384200_178.pdf.p7m");
+        File myObj10 = new File("src/files/1577785893607_178.docx");
+        File myObj11 = new File("src/files/1577786203796_346.txt");
+        File myObj12 = new File("src/files/ACCETTAZIONE ORDINE ACQUISTO.pdf");
+        File myObj13 = new File("src/files/DICH.LIBERAT.FOR.BENI NUOVI.xml");
         if (myObj.exists()) {
             try {
                 System.out.println("JPG " + CheckFileExtensionMime.getInstance().checkFile(myObj) );
@@ -31,8 +35,18 @@ public class Main{
                 System.out.println("XLSX 8: " + CheckFileExtensionMime.getInstance().checkFile(myObj8) );
                 System.out.println();
                 System.out.println("ZIP " + CheckFileExtensionMime.getInstance().checkFile(myObj7) );
-//                System.out.println();
-//                System.out.println("PDF.P7M " + CheckFileExtensionMime.getInstance().checkFile(myObj9) );
+                System.out.println();
+                System.out.println("PDF.P7M " + CheckFileExtensionMime.getInstance().checkFile(myObj9) );
+                System.out.println();
+                System.out.println("PDF.P7M 2: " + CheckFileExtensionMime.getInstance().checkFile(myObj10) );
+                System.out.println();
+                System.out.println("PDF.P7M 3: " + CheckFileExtensionMime.getInstance().checkFile(myObj11) );
+                System.out.println();
+                System.out.println("PDF.P7M 4: " + CheckFileExtensionMime.getInstance().checkFile(myObj11) );
+                System.out.println();
+                System.out.println("PDF.P7M 5: " + CheckFileExtensionMime.getInstance().checkFile(myObj12) );
+                System.out.println();
+                System.out.println("PDF.P7M 6: " + CheckFileExtensionMime.getInstance().checkFile(myObj13) );
             } catch (IOException e) {
                 e.printStackTrace();
             }
