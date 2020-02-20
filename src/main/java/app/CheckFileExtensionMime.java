@@ -45,13 +45,13 @@ public class CheckFileExtensionMime {
         boolean check = false;
 
         if (hex.substring(0, 10).equalsIgnoreCase("255044462d")) {
-            System.out.println("Rilevato: pdf");
+            System.out.println("Detected file format: pdf");
             if (extension.equalsIgnoreCase("pdf")) {
                 check = true;
                 return check;
             }
         } else if (hex.substring(0, 3).equalsIgnoreCase("308")) {
-            System.out.println("Rilevato: p7m o pdf.p7m");
+            System.out.println("Detected file format: p7m or pdf.p7m");
             if (extension.equalsIgnoreCase("p7m") || extension.equalsIgnoreCase("pdf.p7m")) {
                 check = true;
                 return check;
@@ -60,13 +60,13 @@ public class CheckFileExtensionMime {
                 hex.substring(0,24).equalsIgnoreCase("FFD8FFE000104A4649460001") ||
                 hex.substring(0,8).equalsIgnoreCase("FFD8FFEE") ||
                 hex.substring(0, 24).equalsIgnoreCase("FFD8FFE1????457869660000"))) {
-            System.out.println("Rilevato: jpg o jpeg");
+            System.out.println("Detected file format: jpg or jpeg");
             if (extension.equalsIgnoreCase("jpg") || extension.equalsIgnoreCase("jpeg")) {
                 check = true;
                 return check;
             }
         } else if (hex.substring(0, 16).equalsIgnoreCase("D0CF11E0A1B11AE1")) {
-            System.out.println("Rilevato: doc, xls, ppt o msg");
+            System.out.println("Detected file format: doc, xls, ppt or msg");
             if (extension.equalsIgnoreCase("doc") || extension.equalsIgnoreCase("xls")
                     || extension.equalsIgnoreCase("ppt") || extension.equalsIgnoreCase("msg")) {
                 check = true;
@@ -76,7 +76,7 @@ public class CheckFileExtensionMime {
                 hex.substring(0,8).equalsIgnoreCase("504B0506") ||
                 hex.substring(0, 8).equalsIgnoreCase("504B0708"))) {
             System.out.println(
-                    "Rilevato: zip, apk, docx, epub, ipa, jar, kmz, maff, odp, ods, odt, usdz, vsdx, xlsx, xpi");
+                    "Detected file format: zip, apk, docx, epub, ipa, jar, kmz, maff, odp, ods, odt, usdz, vsdx, xlsx, xpi");
             if (extension.equalsIgnoreCase("zip") || extension.equalsIgnoreCase("apk")
                     || extension.equalsIgnoreCase("docx") || extension.equalsIgnoreCase("epub")
                     || extension.equalsIgnoreCase("ipa") || extension.equalsIgnoreCase("jar")
@@ -90,88 +90,88 @@ public class CheckFileExtensionMime {
             }
         }else if((hex.substring(0,14).equalsIgnoreCase("526172211A0700") ||
                 hex.substring(0, 16).equalsIgnoreCase("526172211A070100"))) {
-            System.out.println("Rilevato: rar");
+            System.out.println("Detected file format: rar");
             if (extension.equalsIgnoreCase("rar")) {
                 check = true;
                 return check;
             }
         } else if ((hex.substring(0, 16).equalsIgnoreCase("89504E470D0A1A0A"))) {
-            System.out.println("Rilevato: png");
+            System.out.println("Detected file format: png");
             if (extension.equalsIgnoreCase("png")) {
                 check = true;
                 return check;
             }
         } else if ((hex.substring(0, 8).equalsIgnoreCase("CAFEBABE"))) {
-            System.out.println("Rilevato: class");
+            System.out.println("Detected file format: class");
             if (extension.equalsIgnoreCase("class")) {
                 check = true;
                 return check;
             }
         } else if ((hex.substring(0, 16).equalsIgnoreCase("3026B2758E66CF11"))) {
-            System.out.println("Rilevato: asf, wma, wmv");
+            System.out.println("Detected file format: asf, wma, wmv");
             if ((extension.equalsIgnoreCase("asf") || extension.equalsIgnoreCase("wma")
                     || extension.equalsIgnoreCase("wmv"))) {
                 check = true;
                 return check;
             }
         } else if ((hex.substring(0, 8).equalsIgnoreCase("38425053"))) {
-            System.out.println("Rilevato: psd");
+            System.out.println("Detected file format: psd");
             if (extension.equalsIgnoreCase("psd")) {
                 check = true;
                 return check;
             }
         } else if (hex.substring(0, 24).equalsIgnoreCase("52494646????????57415645")) {
-            System.out.println("Rilevato: wav");
+            System.out.println("Detected file format: wav");
             if (extension.equalsIgnoreCase("wav")) {
                 check = true;
                 return check;
             }
         } else if (hex.substring(0, 24).equalsIgnoreCase("52494646????????41564920")) {
-            System.out.println("Rilevato: avi");
+            System.out.println("Detected file format: avi");
             if (extension.equalsIgnoreCase("avi")) {
                 check = true;
                 return check;
             }
         }else if((hex.substring(0,6).equalsIgnoreCase("494433") ||
                 hex.substring(0, 4).equalsIgnoreCase("FFFB"))) {
-            System.out.println("Rilevato: mp3");
+            System.out.println("Detected file format: mp3");
             if (extension.equalsIgnoreCase("mp3")) {
                 check = true;
                 return check;
             }
         } else if (hex.substring(0, 4).equalsIgnoreCase("424D")) {
-            System.out.println("Rilevato: bmp o dib");
+            System.out.println("Detected file format: bmp or dib");
             if (extension.equalsIgnoreCase("bmp") || extension.equalsIgnoreCase("dib")) {
                 check = true;
                 return check;
             }
         } else if (hex.substring(0, 10).equalsIgnoreCase("4344303031")) {
-            System.out.println("Rilevato: iso");
+            System.out.println("Detected file format: iso");
             if (extension.equalsIgnoreCase("iso")) {
                 check = true;
                 return check;
             }
         } else if (hex.substring(0, 16).equalsIgnoreCase("7573746172003030")
                 || hex.substring(0, 16).equalsIgnoreCase("7573746172202000")) {
-            System.out.println("Rilevato: tar");
+            System.out.println("Detected file format: tar");
             if (extension.equalsIgnoreCase("tar")) {
                 check = true;
                 return check;
             }
         } else if (hex.substring(0, 12).equalsIgnoreCase("377ABCAF271C")) {
-            System.out.println("Rilevato: 7z");
+            System.out.println("Detected file format: 7z");
             if (extension.equalsIgnoreCase("7z")) {
                 check = true;
                 return check;
             }
         } else if (hex.substring(0, 4).equalsIgnoreCase("1F8B")) {
-            System.out.println("Rilevato: gz o tar.gz");
+            System.out.println("Detected file format: gz or tar.gz");
             if (extension.equalsIgnoreCase("gz") || extension.equalsIgnoreCase("tar.gz")) {
                 check = true;
                 return check;
             }
         } else if (hex.substring(0, 8).equalsIgnoreCase("1A45DFA3")) {
-            System.out.println("Rilevato: mkv, mka, mks, mk3d o webm");
+            System.out.println("Detected file format: mkv, mka, mks, mk3d or webm");
             if (extension.equalsIgnoreCase("mkv") || extension.equalsIgnoreCase("mka")
                     || extension.equalsIgnoreCase("mks") || extension.equalsIgnoreCase("mk3d")
                     || extension.equalsIgnoreCase("webm")) {
@@ -179,39 +179,39 @@ public class CheckFileExtensionMime {
                 return check;
             }
         } else if (hex.substring(0, 12).equalsIgnoreCase("3c3f786d6c20")) {
-            System.out.println("Rilevato: xml");
+            System.out.println("Detected file format: xml");
             if (extension.equalsIgnoreCase("xml")) {
                 check = true;
                 return check;
             }
         } else if (hex.substring(0, 12).equalsIgnoreCase("7B5C72746631")) {
-            System.out.println("Rilevato: rtf");
+            System.out.println("Detected file format: rtf");
             if (extension.equalsIgnoreCase("rtf")) {
                 check = true;
                 return check;
             }
         } else if (hex.substring(0, 8).equalsIgnoreCase("000001BA")
                 || hex.substring(0, 8).equalsIgnoreCase("000001B3")) {
-            System.out.println("Rilevato: mpg o mpeg");
+            System.out.println("Detected file format: mpg or mpeg");
             if (extension.equalsIgnoreCase("mpg") || extension.equalsIgnoreCase("mpeg")) {
                 check = true;
                 return check;
             }
         } else if (hex.substring(0, 12).equalsIgnoreCase("474946383761")
                 || hex.substring(0, 12).equalsIgnoreCase("474946383961")) {
-            System.out.println("Rilevato: gif");
+            System.out.println("Detected file format: gif");
             if (extension.equalsIgnoreCase("gif")) {
                 check = true;
                 return check;
             }
         } else if (hex.substring(0, 4).equalsIgnoreCase("4D5A")) {
-            System.out.println("Rilevato: exe o dll");
+            System.out.println("Detected file format: exe or dll");
             if (extension.equalsIgnoreCase("exe") || extension.equalsIgnoreCase("dll")) {
                 check = true;
                 return check;
             }
         } else {
-            System.out.println("Formato del file non riconosciuto!");
+            System.out.println("File format not recognized!");
         }
 
         return check;
