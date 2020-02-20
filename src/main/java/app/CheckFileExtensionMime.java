@@ -50,7 +50,7 @@ public class CheckFileExtensionMime {
                 check = true;
                 return check;
             }
-        } else if (hex.substring(0, 4).equalsIgnoreCase("3083")) {
+        } else if (hex.substring(0, 3).equalsIgnoreCase("308")) {
             System.out.println("Rilevato: p7m o pdf.p7m");
             if (extension.equalsIgnoreCase("p7m") || extension.equalsIgnoreCase("pdf.p7m")) {
                 check = true;
